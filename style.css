@@ -5,6 +5,14 @@ body {
 .header {
     background-color: #1F2937;
 }
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px;
+    margin-top: 0;
+    margin-bottom: 75px;
+}
 
 .header h1 {
     font-size: 24px;
@@ -12,9 +20,16 @@ body {
 }
 
 .home-splash-text h2 {
-    font-weight: 48px;
+    font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+    margin: 0;
+    margin-bottom: 8px;
+}
+
+.home-splash-text p {
+    margin: 0;
+    margin-bottom: 8px;
 }
 
 .home-splash-text p, ul, button {
@@ -22,10 +37,30 @@ body {
     color: #E5E7EB;
 }
 
+.home-splash {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 150px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 75px;
+}
+
+
+.home-splash img {
+    aspect-ratio: 16 / 9;
+}
+
 ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: flex;
+}
+
+li {
+    padding: 8px;
 }
 
 button {
