@@ -48,8 +48,31 @@ body {
 }
 
 
+.home-splash-text {
+    max-width: 430px;
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+}
+
 .home-splash img {
+    flex-basis: 0;
+    flex-grow: 1;
+    min-width: 0;
     aspect-ratio: 16 / 9;
+    max-width: 430px;
+    width: auto;
+    height: auto;
+}
+
+.dogs {
+    /*aspect-ratio: 1/1;*/
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+    border: 2px solid #3882F6;
+    padding: 0;
+    margin: 0;
 }
 
 ul {
@@ -67,6 +90,39 @@ button {
     background-color: #3882F6;
 }
 
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 75px;
+}
+
+.tortuga, .kamurocho, .wrestler, .jungle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100px;
+}
+
+.tortuga p, .kamurocho p , .wrestler p, .jungle p {
+    text-align: center;
+}
+
+.jungle p {
+    margin-top: 16px;
+}
+
+.middle-dogs {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+}
+
 .middle h2 {
     font-size: 36px;
     color: #1F2937;
@@ -79,15 +135,44 @@ button {
     font-size: 36px;
     font-style: italic;
     font-weight: light;
+    display: flex;
+    flex-direction: column;
+    padding: 75px 125px;
 }
 
+.dog-quote {
+    margin-bottom: 0;
+}
+
+.schulz {
+    align-self: flex-end;
+    font-weight: 900;
+    color: #1F2937;
+    font-style: normal;
+    margin-top: 0;
+}
 .modal {
     background-color: #3882F6;
     color: #F9FAF8;
+    margin: 75px 125px;
+    padding: 0px 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 75px;
+    border-radius: 5px;    
 }
+
 
 .footer {
     background-color: #1F2937;
     color: #E5E7EB;
+    text-align: center;
+    padding: 8px;
     font-size: 18px;
+}
+
+button {
+    border-radius: 5px;
+    padding: 0 12px;
 }
